@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    /* height: 100px;
+    background-color: #263859; */
+        /* background-image: url("data:image/jpeg;base64,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"); */
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ96tM_yC-kIxzdFCzOjUN_-WuNVpcQq3g3gw&usqp=CAU");
+
+
+
+
+        background-size: cover;
+        background-repeat: no-repeat;
+      
+        background-position: center center;
+        background-attachment: fixed;
+    
+
+}
+
+
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
+}
+
+#temp {
+    text-align: center;
+
+}
+
+#temp #temp-unit {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+
+}
+
+#temp #temp-value {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    color: #ffffff;
+
+}
+
+#climate {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+#location {
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+#temp-icon {
+    margin: 1rem;
+    width: 40%;
+    height: auto;
+
+}
+
+main {
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #6b778d;
+
+
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ96tM_yC-kIxzdFCzOjUN_-WuNVpcQq3g3gw&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    border-radius: 20px;
+    width: 360px;
+    height: 360px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 20px 10px rgba(112, 102, 102, 0.2);
+
+
+}
+
+#search-button {
+    color: #494949;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: white;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 11px;
+    border: 2px solid #494949;
+    display: inline-block;
+    transition: all 0.4 ease 0s;
+
+}
+
+#search-button:hover {
+    color: #ffffff;
+    background: #ff6768;
+    border-color: #ff6768;
+    transition: all 0.4 ease 0s;
+
+}
+
+#search-input {
+    width: 260px;
+    overflow: hidden;
+    font-size: 30px;
+    margin: 8px 0;
+    padding: 8px 0;
+    border-bottom: 3px solid #ff6768;
+    color: white;
+    outline: none;
+    background: none;
+
+}
+
+input {
+    border: none;
+
+}
